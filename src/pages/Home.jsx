@@ -26,16 +26,18 @@ const Home = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <div>
+    <>
+    <div className='divHome'>
       <h1>Top Cryptocurrencies</h1>
-      <ul>
-        {coins.map((coin) => (
-          <li key={coin.id}>
-            <Link to={`/coin/${coin.id}`}>{coin.name}</Link> - ${parseFloat(coin.priceUsd).toFixed(2)}
-          </li>
-        ))}
-      </ul>
+          <div className='divCardHome'>
+            {coins.map((coin) => (
+              <div key={coin.id} className='card'>
+                <Link to={`/coin/${coin.id}`}>{coin.name}</Link> - ${parseFloat(coin.priceUsd).toFixed(2)}
+              </div>
+            ))}
+            </div>
     </div>
+    </>
   );
 };
 

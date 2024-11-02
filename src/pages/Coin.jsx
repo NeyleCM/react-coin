@@ -59,7 +59,7 @@ const Coin = () => {
   if (!coin) return <p>Coin not found</p>;
 
   return (
-    <div>
+    <div className='cardCoin'>
       <h1>{coin.name} ({coin.symbol})</h1>
       {coinImage ? (
         <img src={coinImage} alt={`${coin.name} logo`} style={{ width: '150px' }} />
