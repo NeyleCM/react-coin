@@ -54,6 +54,8 @@ body {
 h1 {
   font-weight: 900;
   font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 p {
@@ -93,9 +95,11 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   text-align: center;
   transition: transform 0.3s ease;
-  cursor: pointer;
 }
 
+Link {
+  cursor: pointer;
+}
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
